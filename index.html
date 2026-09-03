@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青空子ども会Ⅱ | 保護者の方へ</title>
+<meta name="description" content="早稲田大学公認・日本女子大学共同サークル「青空子ども会Ⅱ」の保護者向け案内サイトです。1981年の創立以来、毎週土曜に公園で子どもたちと外遊びをしています。">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Klee+One:wght@400;600&family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          sora: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
+          taiyo: { 50:"#fff6ec",100:"#ffe9d2",200:"#ffd1a3",300:"#fcb877",400:"#f4a05c",500:"#ee9245",600:"#cc7530",700:"#a55e27",800:"#7d481f",900:"#543116" },
+          kami: { 50:"#fffdf8",100:"#fbf7ef",200:"#f4eee0",300:"#e9dfc8",400:"#ddcfae",500:"#c9b48c",600:"#ab9268",700:"#86714e",800:"#5f5137",900:"#3d3423" },
+          ink: { 50:"#f8f6f3",100:"#ede9e2",600:"#756b5a",700:"#564e41",800:"#3a342b",900:"#2b2620" },
+          shiba: { 50:"#f1f6ed",100:"#dfebd4",500:"#7fa06b",600:"#668055",700:"#4f6242" },
+        },
+        fontFamily: {
+          body: ['"M PLUS Rounded 1c"', '"Hiragino Maru Gothic ProN"', '"Yu Gothic"', "sans-serif"],
+          display: ['"Zen Maru Gothic"', '"M PLUS Rounded 1c"', '"Hiragino Maru Gothic ProN"', "sans-serif"],
+          caption: ['"Klee One"', '"Zen Maru Gothic"', '"M PLUS Rounded 1c"', "sans-serif"],
+          stat: ['"Fredoka"', '"Zen Maru Gothic"', '"M PLUS Rounded 1c"', "sans-serif"],
+        },
+        boxShadow: {
+          paper: "0 1px 2px rgba(58,52,43,0.08), 0 1px 0 rgba(58,52,43,0.05)",
+          "paper-lg": "0 6px 18px -8px rgba(58,52,43,0.22)",
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-kami-100 font-body text-ink-800 antialiased">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:bg-sora-600 focus:px-5 focus:py-2 focus:text-white">
+  本文へスキップ
+</a>
+
+<!-- ==================== ヘッダー ==================== -->
+<header data-header class="sticky top-0 z-50 bg-kami-50/95 backdrop-blur transition-shadow duration-300 border-b border-kami-300 relative">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-3">
+
+    <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+      <span data-logo-mark class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center overflow-hidden rounded-full ring-2 ring-white shadow-paper">
+        <img src="assets/logo/logo.jpg" alt="青空子ども会Ⅱ" class="h-full w-full object-cover">
+      </span>
+      <span class="leading-tight">
+        <span class="block font-display font-bold text-lg sm:text-xl text-ink-900">青空子ども会Ⅱ</span>
+        <span class="hidden sm:block text-xs text-ink-600">早稲田大学公認・日本女子大学共同サークル</span>
+      </span>
+    </a>
+
+    <nav aria-label="サイトナビゲーション" class="hidden lg:flex items-center gap-1">
+      <a href="mission.html" class="top-nav-link">活動する理由</a>
+      <a href="gallery.html" class="top-nav-link">活動フォト</a>
+      <a href="members.html" class="top-nav-link">メンバー紹介</a>
+      <a href="safety.html" class="top-nav-link">安全への取り組み</a>
+      <a href="voice.html" class="top-nav-link">保護者の声</a>
+      <a href="faq.html" class="top-nav-link">よくある質問</a>
+    </nav>
+
+    <a href="contact.html" class="hidden lg:inline-flex top-nav-cta">お問い合わせ</a>
+
+    <button type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu-panel"
+            class="lg:hidden inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-ink-800 hover:bg-kami-200 active:bg-kami-300 transition-colors duration-200"
+            aria-label="メニューを開く">
+      <span class="hamburger-icon"><span></span><span></span><span></span></span>
+    </button>
+
+  </div>
+</header>
+
+<div id="mobile-menu-panel" data-menu-panel class="mobile-menu-panel">
+    <div class="min-h-full px-4 pt-24 pb-10">
+      <div class="text-center mb-6">
+        <p class="section-tag">もくじ</p>
+      </div>
+
+      <nav aria-label="メニュー" class="rounded-xl bg-white border border-kami-300 shadow-paper divide-y divide-kami-200 overflow-hidden">
+        <a href="mission.html" class="mobile-menu-row">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          私たちが活動する理由
+        </a>
+        <a href="safety.html" class="mobile-menu-row">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          安全への取り組み
+        </a>
+        <a href="voice.html" class="mobile-menu-row">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          保護者の声
+        </a>
+        <a href="gallery.html" class="mobile-menu-row">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          活動フォト
+        </a>
+      </nav>
+
+      <div class="mt-4 grid grid-cols-2 gap-3">
+        <a href="index.html#info" class="mobile-menu-row-small">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          アクセス
+        </a>
+        <a href="contact.html" class="mobile-menu-row-small">
+          <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          お問い合わせ
+        </a>
+      </div>
+
+      <a href="https://www.instagram.com/aozora_children2/" target="_blank" rel="noopener noreferrer" class="mt-4 mobile-menu-instagram">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" /></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+
+<!-- ==================== メインコンテンツ ==================== -->
+<main id="main-content" class="flex-1">
+
+  <!-- ---------- ファーストビュー (FV)：モバイル専用（写真を上に敷き、下にテキスト） ---------- -->
+  <!-- Unsplashの仮画像です。本番公開前に実際の活動写真へ差し替えてください。差し替え先: assets/photos/hero/hero-main.jpg -->
+  <section class="lg:hidden relative w-full overflow-hidden bg-kami-50 border-b border-kami-300">
+    <div class="relative w-full h-[52vh] min-h-[320px] overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=900&q=80&auto=format&fit=crop"
+           alt="公園で外遊びをする子どもたちと学生（イメージ）" class="hero-photo-in absolute inset-0 h-full w-full object-cover">
+    </div>
+    <div class="px-6 py-10 text-center">
+      <h1 class="font-display font-bold text-4xl text-ink-900 leading-tight">
+        <span class="hero-headline-line"><span class="text-sora-600">青空</span>の下、</span>
+        <span class="hero-headline-line">遊びと学び。</span>
+      </h1>
+      <p class="mt-4 text-sm text-ink-700 leading-relaxed text-pretty">早稲田大学×日本女子大学による、<br>ボランティアサークル</p>
+    </div>
+  </section>
+
+  <!-- ---------- ファーストビュー (FV)：デスクトップ（テキスト左／写真右） ---------- -->
+  <section class="hidden lg:block relative w-full overflow-hidden bg-kami-50 border-b border-kami-300">
+    <div class="lg:flex lg:flex-row lg:min-h-[600px]">
+
+      <!-- 左：見出し・紹介文・イラスト -->
+      <div class="relative flex flex-col items-center justify-center px-6 sm:px-10 lg:px-14 xl:px-20 py-14 sm:py-16 lg:py-20 lg:w-1/2">
+
+        <div class="hero-title-vertical flex items-start gap-4 sm:gap-5">
+          <h1 class="hero-title-main font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-relaxed text-ink-900">
+            <span class="hero-headline-line">青空の下、</span><span class="hero-headline-line">遊びと学び。</span>
+          </h1>
+          <p class="hero-title-sub font-caption text-sm sm:text-base text-ink-600 leading-loose pt-1">
+            <span class="hero-headline-line">早稲田大学×日本女子大学による</span><span class="hero-headline-line">ボランティアサークル</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 右：写真 -->
+      <!-- Unsplashの仮画像です。本番公開前に実際の活動写真へ差し替えてください。差し替え先: assets/photos/hero/hero-main.jpg（推奨 1600x1600px以上） -->
+      <div class="relative h-[46vh] min-h-[280px] lg:h-auto lg:w-1/2">
+        <img src="https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=1400&q=80&auto=format&fit=crop"
+             alt="公園で外遊びをする子どもたちと学生（イメージ）" class="absolute inset-0 h-full w-full object-cover">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ---------- サークル紹介 ---------- -->
+  <section id="about" class="scroll-mt-20 sm:scroll-mt-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="section-tag justify-center">サークル紹介</p>
+        <h2 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900">毎週土曜日、<br>大学付近の公園で子どもたちと遊んでいます</h2>
+        <p class="mt-4 text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
+          青空子ども会Ⅱは、1981年に創立し、45年以上にわたって活動を続けてきた早稲田大学公認・日本女子大学共同サークルです。
+          地域の小学生を対象に外遊びを中心とした活動を続けており、長い年月をかけて大学と地域の方々に支えられてきました。
+        </p>
+      </div>
+
+      <div class="reveal mt-10 sm:mt-12 grid grid-cols-2 lg:grid-cols-4 border-t border-l border-kami-300 max-w-3xl mx-auto">
+
+        <div class="border-r border-b border-kami-300 p-5 sm:p-6 text-center flex flex-col items-center justify-center gap-2">
+          <p class="text-[11px] sm:text-xs font-bold text-ink-600">創立</p>
+          <p class="font-stat font-bold text-xl sm:text-2xl text-ink-900 tabular-nums">1981年</p>
+          <p class="text-[11px] sm:text-xs text-ink-500">今年で45年目</p>
+        </div>
+
+        <div class="border-r border-b border-kami-300 p-5 sm:p-6 text-center flex flex-col items-center justify-center gap-2">
+          <p class="text-[11px] sm:text-xs font-bold text-ink-600">運営体制</p>
+          <p class="font-display font-bold text-sm sm:text-base text-ink-900 leading-snug">早稲田大学<br>×<br>日本女子大学</p>
+          <p class="text-[11px] sm:text-xs text-ink-500">公認・共同サークル</p>
+        </div>
+
+        <div class="border-r border-b border-kami-300 p-5 sm:p-6 text-center flex flex-col items-center justify-center gap-2">
+          <p class="text-[11px] sm:text-xs font-bold text-ink-600">活動対象</p>
+          <p class="font-display font-bold text-lg sm:text-xl text-ink-900">小学生</p>
+          <p class="text-[11px] sm:text-xs text-ink-500">地域の元気な子どもたち</p>
+        </div>
+
+        <div class="border-r border-b border-kami-300 p-5 sm:p-6 text-center flex flex-col items-center justify-center gap-2">
+          <p class="text-[11px] sm:text-xs font-bold text-ink-600">所属学生数</p>
+          <p class="font-display font-bold text-lg sm:text-xl text-ink-900">約100名</p>
+          <p class="text-[11px] sm:text-xs text-ink-500">早稲田大学 20名<br>日本女子大学 80名</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 活動内容 ---------- -->
+  <section id="activities" class="scroll-mt-20 sm:scroll-mt-24 border-t border-kami-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="section-tag justify-center">活動内容</p>
+        <h2 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">外遊びを軸に、季節ごとの体験を</h2>
+        <p class="mt-4 text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
+          外遊びを軸に、季節ごとのイベントや工作など、子どもたちの「やってみたい」を引き出す活動を行っています。
+        </p>
+      </div>
+
+      <div class="reveal mt-10 sm:mt-12 grid sm:grid-cols-3 gap-6 sm:gap-8">
+
+        <!-- Unsplashの仮画像です。差し替え先: assets/photos/activities/outdoor.jpg -->
+        <div>
+          <div class="aspect-[4/3] rounded-xl border border-kami-300 shadow-paper overflow-hidden photo-pin tilt-left">
+            <img src="https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=800&q=80&auto=format&fit=crop"
+                 alt="公園で外遊びをする子どもたち（イメージ）" class="h-full w-full object-cover">
+          </div>
+          <h3 class="mt-5 font-display font-bold text-base sm:text-lg text-ink-900">普段の外遊び</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+            毎回の活動では、公園でドッヂビーやしっぽとりなど、体をめいっぱい動かして遊びます。
+          </p>
+        </div>
+
+        <!-- Unsplashの仮画像です。差し替え先: assets/photos/activities/seasonal-event.jpg -->
+        <div>
+          <div class="aspect-[4/3] rounded-xl border border-kami-300 shadow-paper overflow-hidden photo-pin tilt-right">
+            <img src="https://images.unsplash.com/photo-1524494860062-9442631ee30e?w=800&q=80&auto=format&fit=crop"
+                 alt="季節のイベントを楽しむ子どもたち（イメージ）" class="h-full w-full object-cover">
+          </div>
+          <h3 class="mt-5 font-display font-bold text-base sm:text-lg text-ink-900">季節のイベント</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+            目白祭やハロウィン、クリスマス会、節分、七夕など、季節に合わせたゲームや工作を楽しみます。
+          </p>
+        </div>
+
+        <!-- Unsplashの仮画像です。差し替え先: assets/photos/activities/trip-camp.jpg -->
+        <div>
+          <div class="aspect-[4/3] rounded-xl border border-kami-300 shadow-paper overflow-hidden photo-pin tilt-left">
+            <img src="https://images.unsplash.com/photo-1531796311868-83672cd144f3?w=800&q=80&auto=format&fit=crop"
+                 alt="遠足やキャンプを楽しむ子どもたち（イメージ）" class="h-full w-full object-cover">
+          </div>
+          <h3 class="mt-5 font-display font-bold text-base sm:text-lg text-ink-900">遠足・キャンプ</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+            秋と春のハイキング、夏のキャンプなど、公園を飛び出してお出かけすることもあります。
+          </p>
+        </div>
+
+      </div>
+
+      <div class="reveal mt-12 text-center">
+        <a href="gallery.html"
+           class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-sora-300 text-sora-700 hover:bg-sora-50 font-bold text-sm px-6 py-3 transition-colors duration-200">
+          活動フォトギャラリーをもっと見る
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 1日のスケジュール例 ---------- -->
+  <section id="schedule" class="scroll-mt-20 sm:scroll-mt-24 relative overflow-hidden bg-sora-50 border-t border-kami-300">
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="section-tag justify-center">1日のスケジュール例</p>
+        <h2 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">土曜14:00〜16:00の2時間</h2>
+        <p class="mt-4 text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
+          初めての方にもイメージしていただけるよう、活動当日の一例をご紹介します。
+        </p>
+      </div>
+
+      <!-- 太陽の一日：集合(14:00)から解散(16:00)までを、太陽が描く弧として可視化 -->
+      <div class="reveal mt-12 relative max-w-xl mx-auto">
+
+        <svg class="pointer-events-none absolute -left-14 sm:-left-24 top-0 h-full w-32 sm:w-52" viewBox="0 0 200 700" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sun-arc-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ab6d3" />
+              <stop offset="55%" stop-color="#ddcfae" />
+              <stop offset="100%" stop-color="#ee9245" />
+            </linearGradient>
+          </defs>
+          <path d="M190 10 Q 10 350 190 690" fill="none" stroke="url(#sun-arc-gradient)" stroke-width="14" stroke-linecap="round" opacity="0.5" />
+        </svg>
+
+        <div class="relative z-10">
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-kami-200 text-ink-600 shadow-paper ring-2 ring-kami-300">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5l3.2 2" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-kami-300"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-ink-500 text-base sm:text-lg tracking-wide tabular-nums">13:30</p>
+            <h3 class="font-bold text-ink-800">学生集合・準備<span class="ml-2 text-[11px] font-bold text-ink-400">（学生のみ）</span></h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">子どもたちのお迎えに先立ち、学生スタッフが集合して活動の準備をします。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-sora-500 text-white shadow-paper">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-sora-300"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-sora-600 text-base sm:text-lg tracking-wide tabular-nums">14:00</p>
+            <h3 class="font-bold text-ink-900">子どもたち集合</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">学生スタッフがお迎えします。まずはみんなでご挨拶からスタートです。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-white text-sora-600 shadow-paper ring-2 ring-sora-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><circle cx="17" cy="9" r="2.6" /><path d="M3.5 20c0-3.6 2.9-6 5.5-6s5.5 2.4 5.5 6M14.8 20c0-2.7-1-4.7-2.6-5.9.6-.3 1.3-.5 2-.5 2.6 0 5.3 2.1 5.3 5.4" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-sora-200"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-sora-600 text-base sm:text-lg tracking-wide tabular-nums">14:10</p>
+            <h3 class="font-bold text-ink-900">はじまりの会・自己紹介</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">学生スタッフと自己紹介をして、今日の活動内容を発表します。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-white text-sora-600 shadow-paper ring-2 ring-sora-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5" /><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-kami-400"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-sora-600 text-base sm:text-lg tracking-wide tabular-nums">14:20</p>
+            <h3 class="font-bold text-ink-900">外遊びタイム①</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">公園でドッヂビーやしっぽとりなど、思いっきり体を動かします。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-white text-taiyo-600 shadow-paper ring-2 ring-taiyo-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.5-9C.8 8.2 2.6 4.8 6 4.2c2-.3 3.7.7 6 3 2.3-2.3 4-3.3 6-3 3.4.6 5.2 4 3.5 7.8-2.5 4.6-9.5 9-9.5 9Z" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-taiyo-200"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-taiyo-600 text-base sm:text-lg tracking-wide tabular-nums">15:00</p>
+            <h3 class="font-bold text-ink-900">水分補給・小休憩</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">水分をとって、少し休んでから後半に備えます。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-white text-taiyo-600 shadow-paper ring-2 ring-taiyo-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 14.5 4 20M14 3l7 7-9.5 9.5-7-7L14 3Z" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-taiyo-300"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-taiyo-600 text-base sm:text-lg tracking-wide tabular-nums">15:10</p>
+            <h3 class="font-bold text-ink-900">外遊びタイム②</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">前半とは違う遊びをして、後半も思いっきり体を動かします。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-white text-taiyo-600 shadow-paper ring-2 ring-taiyo-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><circle cx="17" cy="9" r="2.6" /><path d="M3.5 20c0-3.6 2.9-6 5.5-6s5.5 2.4 5.5 6M14.8 20c0-2.7-1-4.7-2.6-5.9.6-.3 1.3-.5 2-.5 2.6 0 5.3 2.1 5.3 5.4" /></svg>
+            </span>
+            <span class="mt-1 w-1 flex-1 rounded-full bg-taiyo-400"></span>
+          </div>
+          <div class="flex-1 pb-8">
+            <p class="font-stat font-bold text-taiyo-700 text-base sm:text-lg tracking-wide tabular-nums">15:45</p>
+            <h3 class="font-bold text-ink-900">終わりの会</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">今日の振り返りをして、みんなで一日を締めくくります。</p>
+          </div>
+        </div>
+
+        <div class="relative flex gap-4 sm:gap-5">
+          <div class="flex flex-col items-center">
+            <span class="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-taiyo-500 text-white shadow-paper">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4a1 1 0 0 1 1-1h9l-1.5 4L14 11H5" /></svg>
+            </span>
+          </div>
+          <div class="flex-1">
+            <p class="font-stat font-bold text-taiyo-700 text-base sm:text-lg tracking-wide tabular-nums">16:00</p>
+            <h3 class="font-bold text-ink-900">解散</h3>
+            <p class="mt-1 text-sm text-ink-600 leading-relaxed text-pretty">学生スタッフがそれぞれの子どもをご自宅まで送り届けます。</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- もっと知る（各ページへの導線） ---------- -->
+  <section class="scroll-mt-20 sm:scroll-mt-24 border-t border-kami-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
+      <div class="reveal text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+        <p class="section-tag justify-center">もっと知る</p>
+        <h2 class="mt-4 font-display font-bold text-xl sm:text-2xl text-ink-900 text-balance">青空子ども会Ⅱのこと、もう少し詳しく</h2>
+      </div>
+
+      <div class="reveal max-w-2xl mx-auto border-y border-kami-300 divide-y divide-kami-300">
+
+        <a href="members.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">学生メンバー紹介</span>
+            <span class="mt-1 block text-sm text-ink-600">どんなお兄さん・お姉さんが遊んでくれるのか、ご紹介します</span>
+          </span>
+        </a>
+
+        <a href="mission.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">私たちが活動する理由</span>
+            <span class="mt-1 block text-sm text-ink-600">なぜ大学生が本気で子どもたちと遊ぶのか、想いをお伝えします</span>
+          </span>
+        </a>
+
+        <a href="gallery.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">活動フォトギャラリー</span>
+            <span class="mt-1 block text-sm text-ink-600">普段の活動の様子を、写真でたっぷりご覧いただけます</span>
+          </span>
+        </a>
+
+        <a href="safety.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">安全への取り組み</span>
+            <span class="mt-1 block text-sm text-ink-600">大切なお子さんをお預かりするための取り組みをご紹介します</span>
+          </span>
+        </a>
+
+        <a href="voice.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">保護者・子どもの声</span>
+            <span class="mt-1 block text-sm text-ink-600">参加してくださった方から届いた感想をご紹介します</span>
+          </span>
+        </a>
+
+        <a href="faq.html" class="group flex items-center gap-4 py-5 sm:py-6 hover:bg-sora-50 transition-colors duration-200">
+          <svg class="mobile-menu-triangle shrink-0" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
+          <span>
+            <span class="block font-display font-bold text-base sm:text-lg text-ink-900">よくある質問</span>
+            <span class="mt-1 block text-sm text-ink-600">人見知り・持ち物・雨の日の対応など、よくいただくご質問にお答えします</span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 活動要項 ---------- -->
+  <section id="info" class="scroll-mt-20 sm:scroll-mt-24 bg-sora-50 border-t border-kami-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="section-tag justify-center">活動要項</p>
+        <h2 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">参加にあたって</h2>
+      </div>
+
+      <div class="reveal mt-10 sm:mt-12 max-w-3xl mx-auto border-y border-kami-300 divide-y divide-kami-200 sm:divide-y-0 sm:grid sm:grid-cols-3">
+
+        <div class="p-6 sm:p-8 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 text-left sm:text-center sm:border-r sm:border-kami-200">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sora-100">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3" /><path d="M3 9h18M8 2v4M16 2v4" /></svg>
+          </span>
+          <div>
+            <p class="text-xs font-bold text-ink-600">活動日時</p>
+            <p class="mt-1 font-display font-bold text-ink-900">毎週土曜日 14:00〜16:00</p>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 text-left sm:text-center sm:border-r sm:border-kami-200">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-taiyo-100">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 text-taiyo-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+          </span>
+          <div>
+            <p class="text-xs font-bold text-ink-600">主な活動場所</p>
+            <p class="mt-1 font-display font-bold text-ink-900">文京区立大塚公園</p>
+          </div>
+        </div>
+
+        <!-- [未確定情報] 参加費用が確定したら ◯◯円 を書き換えてください -->
+        <div class="p-6 sm:p-8 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 text-left sm:text-center">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sora-100">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M9 8h4.5a2.5 2.5 0 0 1 0 5H9m0-2.5h6M11 8v9" /></svg>
+          </span>
+          <div>
+            <p class="text-xs font-bold text-ink-600">参加費用</p>
+            <!-- TODO(要確認): 参加費用が確定したら ◯◯円 を書き換えてください -->
+            <p class="mt-1 font-display font-bold text-ink-900">◯◯円</p>
+            <p class="mt-1 text-[11px] text-taiyo-600 italic">※詳細をご記入ください</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 参加までの流れ ---------- -->
+  <section id="flow" class="scroll-mt-20 sm:scroll-mt-24 bg-sora-50 border-t border-kami-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="section-tag justify-center">参加までの流れ</p>
+        <h2 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">お申し込みから当日まで</h2>
+      </div>
+
+      <div class="reveal mt-12 flex flex-col sm:flex-row items-stretch gap-6 sm:gap-4 max-w-4xl mx-auto">
+
+        <div class="w-full sm:flex-1 text-center">
+          <div class="relative mx-auto h-14 w-14">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-sora-100">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h5" /></svg>
+            </span>
+            <span class="absolute -top-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-taiyo-500 text-white text-xs font-display font-bold">1</span>
+          </div>
+          <h3 class="mt-4 font-display font-bold text-base sm:text-lg text-ink-900">専用フォームから体験申し込み</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">専用フォームより、保護者の方のお名前やお子さんの学年などをご入力ください。</p>
+        </div>
+
+        <svg viewBox="0 0 24 24" class="h-7 w-7 sm:h-8 sm:w-8 shrink-0 mx-auto rotate-90 sm:rotate-0 text-sora-300" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+
+        <div class="w-full sm:flex-1 text-center">
+          <div class="relative mx-auto h-14 w-14">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-taiyo-100">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 text-taiyo-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h1.5c.5 0 1 .3 1.1.8l1 3a1.2 1.2 0 0 1-.4 1.3L8 9.5c1 2.3 2.7 4 5 5l1.4-1.2a1.2 1.2 0 0 1 1.3-.4l3 1c.5.2.8.6.8 1.1V17c0 1-1 2-2 2h-1C10.5 19 4 12.5 4 6V5Z" /></svg>
+            </span>
+            <span class="absolute -top-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-taiyo-500 text-white text-xs font-display font-bold">2</span>
+          </div>
+          <h3 class="mt-4 font-display font-bold text-base sm:text-lg text-ink-900">担当者からご連絡</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">担当の学生スタッフより折り返しご連絡し、参加日程などを調整いたします。</p>
+        </div>
+
+        <svg viewBox="0 0 24 24" class="h-7 w-7 sm:h-8 sm:w-8 shrink-0 mx-auto rotate-90 sm:rotate-0 text-sora-300" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+
+        <div class="w-full sm:flex-1 text-center">
+          <div class="relative mx-auto h-14 w-14">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-sora-100">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 13.5s1.2 2 3.5 2 3.5-2 3.5-2M9 9h.01M15 9h.01" /></svg>
+            </span>
+            <span class="absolute -top-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-taiyo-500 text-white text-xs font-display font-bold">3</span>
+          </div>
+          <h3 class="mt-4 font-display font-bold text-base sm:text-lg text-ink-900">当日見学・体験！</h3>
+          <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">当日は動きやすい服装でお越しください。学生スタッフ一同、笑顔でお迎えします。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 最下部CTA ---------- -->
+  <section data-hide-sticky-bar class="scroll-mt-20 sm:scroll-mt-24 border-t border-kami-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">体験・見学のお申し込みはこちら</h2>
+      <p class="mt-3 text-sm sm:text-base text-ink-700">ご質問だけでも、Instagramのダイレクトメッセージでも承っています。</p>
+      <a href="contact.html"
+         class="mt-7 inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-base px-8 py-4 shadow-paper-lg transition-colors duration-200">
+        <span>お問い合わせ・お申し込み<br>フォームへ</span>
+        <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== フッター ==================== -->
+<footer class="mt-auto bg-sora-900">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-10 sm:pt-12 pb-10 sm:pb-12 flex flex-col items-center gap-4 text-center">
+
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full">
+        <img src="assets/logo/logo.jpg" alt="青空子ども会Ⅱ" class="h-full w-full object-cover">
+      </span>
+      <span class="font-display font-bold text-white">青空子ども会Ⅱ</span>
+    </a>
+
+    <p class="text-xs sm:text-sm text-sora-200">早稲田大学公認・日本女子大学共同サークル（1981年創立）</p>
+
+    <nav aria-label="フッターメニュー" class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold text-sora-100">
+      <a href="members.html" class="hover:text-white transition-colors duration-200">メンバー紹介</a>
+      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動する理由</a>
+      <a href="gallery.html" class="hover:text-white transition-colors duration-200">活動フォト</a>
+      <a href="safety.html" class="hover:text-white transition-colors duration-200">安全への取り組み</a>
+      <a href="voice.html" class="hover:text-white transition-colors duration-200">保護者の声</a>
+      <a href="faq.html" class="hover:text-white transition-colors duration-200">よくある質問</a>
+      <a href="contact.html" class="hover:text-white transition-colors duration-200">お問い合わせ</a>
+    </nav>
+
+    <p class="text-xs text-sora-300/80">&copy; <span data-current-year>2026</span> 青空子ども会Ⅱ</p>
+
+  </div>
+</footer>
+
+<!-- ==================== 常時表示のお問い合わせバー（モバイル・タブレットのみ） ==================== -->
+<div id="sticky-contact-bar" class="lg:hidden z-40 transition-transform duration-300">
+  <a href="contact.html"
+     class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-lg transition-colors duration-200">
+    お問い合わせ
+    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

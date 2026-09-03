@@ -1,0 +1,517 @@
+/* =========================================================
+   青空子ども会Ⅱ - ベーススタイル / カラー・フォント変数
+   「青空日誌」コンセプト：土曜の公園活動を記録した日誌・
+   スクラップブックをめくる体験。天気バッジは装飾ではなく
+   実際の運営ルール（晴天時のみ実施）を伝える実用情報。
+   ========================================================= */
+
+:root {
+  /* --- そら色 Sora（メイン。見出し・リンク・晴れバッジ） --- */
+  --color-sora-50: #f2f8fb;
+  --color-sora-100: #e1eff6;
+  --color-sora-200: #c3dfed;
+  --color-sora-300: #9ccadf;
+  --color-sora-400: #7ab6d3;
+  --color-sora-500: #5fa9ce;
+  --color-sora-600: #4589ac;
+  --color-sora-700: #366d88;
+  --color-sora-800: #2b5568;
+  --color-sora-900: #1e3c49;
+
+  /* --- 太陽オレンジ Taiyo（アクセント。CTA・ロゴの太陽） --- */
+  --color-taiyo-50: #fff6ec;
+  --color-taiyo-100: #ffe9d2;
+  --color-taiyo-200: #ffd1a3;
+  --color-taiyo-300: #fcb877;
+  --color-taiyo-400: #f4a05c;
+  --color-taiyo-500: #ee9245;
+  --color-taiyo-600: #cc7530;
+  --color-taiyo-700: #a55e27;
+  --color-taiyo-800: #7d481f;
+  --color-taiyo-900: #543116;
+
+  /* --- 紙色 Kami（背景の基調。日誌の紙をイメージ） --- */
+  --color-kami-50: #fffdf8;
+  --color-kami-100: #fbf7ef;
+  --color-kami-200: #f4eee0;
+  --color-kami-300: #e9dfc8;
+  --color-kami-400: #ddcfae;
+  --color-kami-500: #c9b48c;
+  --color-kami-600: #ab9268;
+  --color-kami-700: #86714e;
+  --color-kami-800: #5f5137;
+  --color-kami-900: #3d3423;
+
+  /* --- インク Ink（本文色。ペンで書いたような焦茶） --- */
+  --color-ink-50: #f8f6f3;
+  --color-ink-100: #ede9e2;
+  --color-ink-600: #756b5a;
+  --color-ink-700: #564e41;
+  --color-ink-800: #3a342b;
+  --color-ink-900: #2b2620;
+
+  /* --- 芝生グリーン Shiba（天気バッジ「開催」など実用情報のみ） --- */
+  --color-shiba-50: #f1f6ed;
+  --color-shiba-100: #dfebd4;
+  --color-shiba-500: #7fa06b;
+  --color-shiba-600: #668055;
+  --color-shiba-700: #4f6242;
+
+  /* --- フォント --- */
+  --font-body: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+  --font-display: "Zen Maru Gothic", "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+  --font-caption: "Klee One", "Zen Maru Gothic", "M PLUS Rounded 1c", sans-serif;
+  --font-stat: "Fredoka", "Zen Maru Gothic", "M PLUS Rounded 1c", sans-serif;
+
+  /* --- シャドウ（紙のフチ程度。多用しない） --- */
+  --shadow-paper: 0 1px 2px rgba(58, 52, 43, 0.08), 0 1px 0 rgba(58, 52, 43, 0.05);
+  --shadow-paper-lg: 0 6px 18px -8px rgba(58, 52, 43, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-kami-100);
+  color: var(--color-ink-800);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-caption {
+  font-family: var(--font-caption);
+}
+
+::selection {
+  background-color: var(--color-taiyo-200);
+  color: var(--color-ink-900);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-kami-100);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-sora-300);
+  border-radius: 999px;
+  border: 2px solid var(--color-kami-100);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-sora-400);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+.shadow-paper {
+  box-shadow: var(--shadow-paper);
+}
+.shadow-paper-lg {
+  box-shadow: var(--shadow-paper-lg);
+}
+
+header.is-scrolled {
+  box-shadow: var(--shadow-paper);
+}
+
+/* ---------- セクションの見出しラベル（日誌の見出しタグ） ---------- */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: var(--font-caption);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-taiyo-700);
+  background-color: var(--color-taiyo-50);
+  border: 1.5px solid var(--color-taiyo-200);
+  border-radius: 999px;
+  padding: 0.4em 1.1em;
+}
+
+/* ---------- 天気バッジ（装飾ではなく実用情報：晴天時のみ実施） ---------- */
+.weather-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-family: var(--font-caption);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1.5px solid transparent;
+}
+.weather-badge--sun {
+  background-color: var(--color-sora-50);
+  border-color: var(--color-sora-200);
+  color: var(--color-sora-800);
+}
+.weather-badge--rain {
+  background-color: var(--color-kami-200);
+  border-color: var(--color-kami-400);
+  color: var(--color-ink-700);
+}
+
+/* ---------- ヒーロー見出し：縦書き（見出し＋サブタイトル） ---------- */
+.hero-title-main,
+.hero-title-sub {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+.hero-title-main {
+  letter-spacing: 0.04em;
+}
+.hero-title-sub {
+  letter-spacing: 0.15em;
+}
+
+/* ---------- ヒーロー：モバイル写真の登場アニメーション ---------- */
+.hero-photo-in {
+  opacity: 0;
+  transform: scale(1.08);
+  animation: hero-photo-in 1000ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes hero-photo-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- ヒーロー見出し：ふわっとピントが合うように、1行ずつ登場 ---------- */
+.hero-headline-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(8px);
+  animation: hero-headline-in 1100ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hero-headline-line:nth-child(1) {
+  animation-delay: 300ms;
+}
+.hero-headline-line:nth-child(2) {
+  animation-delay: 650ms;
+}
+@keyframes hero-headline-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-headline-line {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* ---------- 写真：日誌に貼ったスナップの表現 ---------- */
+.photo-pin {
+  position: relative;
+  display: inline-block;
+}
+.photo-pin::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  left: 50%;
+  width: 3.2rem;
+  height: 1.3rem;
+  transform: translateX(-50%) rotate(-3deg);
+  background: linear-gradient(0deg, rgba(255, 246, 236, 0.75), rgba(255, 246, 236, 0.55));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-paper);
+  z-index: 2;
+}
+.photo-pin--right::before {
+  left: auto;
+  right: 1.2rem;
+  transform: rotate(4deg);
+}
+.tilt-left {
+  transform: rotate(-2deg);
+}
+.tilt-right {
+  transform: rotate(2deg);
+}
+
+/* ---------- FAQアコーディオン ---------- */
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 350ms ease;
+}
+.faq-panel > div {
+  overflow: hidden;
+}
+.faq-item.is-open .faq-panel {
+  grid-template-rows: 1fr;
+}
+.faq-icon {
+  transition: transform 300ms ease;
+}
+.faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* ---------- スクロールで写真・カードが「貼られる」ような控えめな入り方 ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 550ms ease-out, transform 550ms ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---------- ヘッダーロゴ：初回表示時のみ軽くはねる ---------- */
+@keyframes logo-pop {
+  0% {
+    transform: scale(0.8) rotate(-8deg);
+  }
+  55% {
+    transform: scale(1.08) rotate(4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.logo-pop {
+  animation: logo-pop 700ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-pop {
+    animation: none;
+  }
+}
+
+/* ロゴ：数秒おきに、かわいく軽くゆれる（ほとんどは静止、時々ちょこっと動く） */
+@keyframes logo-wiggle {
+  0%, 75%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  83% {
+    transform: scale(1.08) rotate(-7deg);
+  }
+  90% {
+    transform: scale(1.1) rotate(6deg);
+  }
+  95% {
+    transform: scale(1.03) rotate(-3deg);
+  }
+  98% {
+    transform: scale(1) rotate(1deg);
+  }
+}
+.logo-wiggle {
+  transform-origin: 50% 60%;
+  animation: logo-wiggle 8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-wiggle {
+    animation: none;
+  }
+}
+
+/* ---------- モバイル用ハンバーガーメニュー ---------- */
+[data-menu-toggle] {
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+[data-menu-toggle]:focus-visible {
+  outline: 3px solid var(--color-sora-400) !important;
+  outline-offset: 2px;
+}
+.hamburger-icon {
+  position: relative;
+  display: block;
+  width: 1.25rem;
+  height: 0.9rem;
+}
+.hamburger-icon span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: currentColor;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+.hamburger-icon span:nth-child(1) { top: 0; }
+.hamburger-icon span:nth-child(2) { top: 0.42rem; }
+.hamburger-icon span:nth-child(3) { top: 0.84rem; }
+[data-menu-toggle].is-open .hamburger-icon span:nth-child(1) {
+  transform: translateY(0.42rem) rotate(45deg);
+}
+[data-menu-toggle].is-open .hamburger-icon span:nth-child(2) {
+  opacity: 0;
+}
+[data-menu-toggle].is-open .hamburger-icon span:nth-child(3) {
+  transform: translateY(-0.42rem) rotate(-45deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hamburger-icon span {
+    transition: none;
+  }
+}
+
+.mobile-menu-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: var(--color-kami-50);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  overflow-y: auto;
+  transition: opacity 280ms ease, transform 280ms ease;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+.mobile-menu-panel.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-panel {
+    transition: none;
+  }
+}
+
+.mobile-menu-triangle {
+  flex-shrink: 0;
+  width: 0.65rem;
+  height: 0.65rem;
+  color: var(--color-sora-500);
+}
+
+.mobile-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.15rem 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-ink-900);
+}
+.mobile-menu-row:hover,
+.mobile-menu-row:focus-visible {
+  background-color: var(--color-sora-50);
+}
+
+.mobile-menu-row-small {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-ink-800);
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-kami-300);
+  background-color: #fff;
+}
+.mobile-menu-row-small:hover,
+.mobile-menu-row-small:focus-visible {
+  background-color: var(--color-sora-50);
+}
+
+.mobile-menu-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.15rem 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-ink-900);
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-kami-300);
+  background-color: #fff;
+}
+.mobile-menu-instagram:hover,
+.mobile-menu-instagram:focus-visible {
+  background-color: var(--color-sora-50);
+}
+
+/* ---------- 上部ナビ（PC幅：横並び） ---------- */
+.top-nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-ink-700);
+  white-space: nowrap;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.top-nav-link:hover,
+.top-nav-link:focus-visible {
+  background-color: var(--color-sora-50);
+  color: var(--color-sora-700);
+}
+.top-nav-cta {
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-taiyo-500);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background-color 150ms ease;
+}
+.top-nav-cta:hover,
+.top-nav-cta:focus-visible {
+  background-color: var(--color-taiyo-600);
+  color: #fff;
+}
+
+/* ---------- 常時表示のお問い合わせバー ---------- */
+#sticky-contact-bar {
+  position: fixed;
+  right: max(1rem, calc(env(safe-area-inset-right) + 0.5rem));
+  bottom: max(1rem, calc(env(safe-area-inset-bottom) + 0.5rem));
+  transform: translateY(0);
+}
+#sticky-contact-bar.is-hidden {
+  transform: translateY(150%);
+}
