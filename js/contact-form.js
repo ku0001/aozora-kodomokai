@@ -9,7 +9,7 @@
 // 幹事長交代時の宛先メール変更は、この定数ではなく GAS 側の
 // Script Properties（CONTACT_TO_EMAIL）を書き換えるだけで完結します。
 
-const GAS_ENDPOINT = "https://script.google.com/macros/s/【ここにデプロイ後のWebApp URLを設定】/exec";
+const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbx_rToXGJnzFuRcv5N6nlgorxHXTTTqYXC5NwgjtFStbsVM01Vg32UCyJmjdNnVCH1q/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.querySelector("#contact-form");
