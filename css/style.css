@@ -135,6 +135,24 @@ header.is-scrolled {
   padding: 0.4em 1.1em;
 }
 
+/* ---------- 吹き出し（保護者からのよくある質問） ---------- */
+.speech-bubble {
+  position: relative;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-left: 1px solid var(--color-kami-300);
+  border-top: 1px solid var(--color-kami-300);
+  transform: translateX(-50%) rotate(45deg);
+}
+
 /* ---------- 天気バッジ（装飾ではなく実用情報：晴天時のみ実施） ---------- */
 .weather-badge {
   display: inline-flex;
