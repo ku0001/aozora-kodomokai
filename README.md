@@ -5,15 +5,33 @@
 
 ## サイト構成
 
-- `index.html` … トップページ（LP）
-- `contact.html` … お問い合わせ・体験申し込みフォーム
-- `gallery.html` … 活動フォトギャラリー
+- `index.html` … トップページ（LP。活動要項・参加までの流れ・最下部CTAを含む）
+- `mission.html` … 私たちが活動する理由
+- `safety.html` … 安全への取り組み
+- `voice.html` … 保護者の声
 - `members.html` … 学生メンバー紹介
+- `gallery.html` … 活動フォトギャラリー
+- `faq.html` … よくある質問
+- `access.html` … アクセス（新大塚駅から徒歩1分、集合場所、Googleマップ埋め込み）
+- `contact.html` … お問い合わせ・体験申し込みフォーム
 - `css/style.css` … 全ページ共通スタイル
 - `js/main.js` … 全ページ共通スクリプト（ヘッダー、FAQ開閉、スクロール演出など）
 - `js/contact-form.js` … `contact.html` 専用、フォーム送信処理
+- `assets/illustrations/` … イラスト（unDrawの無料素材。サイトの水色に合わせて着色済み）
 
 Node.jsやビルドツールは使用していません。HTML/CSS/JSをそのままブラウザで開けば動作します。
+
+### 全ページ共通パーツの更新について
+
+ヘッダー・スマホ用「もくじ」メニュー・フッターは、ビルド環境がないため
+**全9ページに同じ内容を直接書いています**。ページの追加やメニューの並び替えをするときは、
+全9つのHTMLを同じように書き換えてください（ヘッダーは `top-nav-link`、
+もくじは `mobile-menu-row`、フッターは `フッターメニュー` の `nav` が対象です）。
+
+### イラストを追加するとき
+
+[unDraw](https://undraw.co) の無料素材を使い、アクセントカラーをサイトの水色（`#5fa9ce`）に
+変えてから `assets/illustrations/` に保存します。
 ローカル確認は `.claude/launch.json` の `static-server` 設定（`.devserver/server.ps1`、ポート5173）を利用してください。
 
 ## ⚠️ 公開前に確認・差し替えが必要なもの
@@ -30,7 +48,7 @@ Node.jsやビルドツールは使用していません。HTML/CSS/JSをその�
 
 ### 2. 実際の写真（ロゴは設定済み）
 
-ロゴは `assets/logo/logo.jpg` に設定済みです（全8ページのヘッダー・
+ロゴは `assets/logo/logo.jpg` に設定済みです（全9ページのヘッダー・
 サイドバー・フッターに反映済み）。写真は引き続きすべてUnsplashの
 仮画像です。`assets/` フォルダ配下に、用途ごとのディレクトリと
 配置手順を記載した `README.txt` を用意しています。
@@ -49,7 +67,10 @@ Node.jsやビルドツールは使用していません。HTML/CSS/JSをその�
 `contact.html` のフォームは、Google Apps Script（GAS）で作った無料のWeb App経由で、
 指定したメールアドレスに内容を送信する仕組みです。
 
-### セットアップ手順（最初の1回だけ）
+> **現状:** セットアップ済みで、`js/contact-form.js` の `GAS_ENDPOINT` に Web App URL が設定されています。
+> 送信先メールアドレスを変えるときは、下の「幹事長交代時の引き継ぎ」だけで足ります。
+
+### セットアップ手順（最初の1回だけ。実施済み）
 
 1. https://script.google.com で新規プロジェクトを作成する。
 2. 以下のコードを貼り付けて保存する。
