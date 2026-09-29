@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ku0001.github.io/aozora-kodomokai/sitemap.xml
