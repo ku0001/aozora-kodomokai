@@ -76,6 +76,10 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-kami-100);
   color: var(--color-ink-800);
+  /* 日本語の文章が単語の途中（数字＋単位、英字表記など）や
+     不自然な位置で改行されるのを防ぐ。あふれる場合のみ折り返す。 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .font-display {
@@ -198,7 +202,7 @@ header.is-scrolled {
 
 /* ---------- ヒーロー写真：やや眠い実写の色味を、サイトの晴れやかな雰囲気に補正 ---------- */
 .photo-tone {
-  filter: saturate(1.18) contrast(1.08) brightness(1.04) sepia(0.06);
+  filter: saturate(1.18) contrast(1.05) brightness(1.0) sepia(0.06);
 }
 
 /* ---------- ヒーロー：モバイル写真の登場アニメーション ---------- */
