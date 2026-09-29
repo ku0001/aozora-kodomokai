@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>私たちが活動する理由 | 青空子ども会Ⅱ</title>
+<title>活動理念 | 青空子ども会Ⅱ</title>
 <meta name="description" content="なぜ大学生のお兄さん・お姉さんが、子どもたちと本気で遊ぶのか。青空子ども会Ⅱが大切にしている想いをご紹介します。">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,8 @@
       extend: {
         colors: {
           sora: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
-          taiyo: { 50:"#fff6ec",100:"#ffe9d2",200:"#ffd1a3",300:"#fcb877",400:"#f4a05c",500:"#ee9245",600:"#cc7530",700:"#a55e27",800:"#7d481f",900:"#543116" },
-          kami: { 50:"#fffdf8",100:"#fbf7ef",200:"#f4eee0",300:"#e9dfc8",400:"#ddcfae",500:"#c9b48c",600:"#ab9268",700:"#86714e",800:"#5f5137",900:"#3d3423" },
+          taiyo: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
+          kami: { 50:"#f2f8fb",100:"#ffffff",200:"#e1eff6",300:"#c3dfed",400:"#9ccadf",500:"#7ab6d3",600:"#5fa9ce",700:"#4589ac",800:"#366d88",900:"#2b5568" },
           ink: { 50:"#f8f6f3",100:"#ede9e2",600:"#756b5a",700:"#564e41",800:"#3a342b",900:"#2b2620" },
           shiba: { 50:"#f1f6ed",100:"#dfebd4",500:"#7fa06b",600:"#668055",700:"#4f6242" },
         },
@@ -31,6 +31,7 @@
         boxShadow: {
           paper: "0 1px 2px rgba(58,52,43,0.08), 0 1px 0 rgba(58,52,43,0.05)",
           "paper-lg": "0 6px 18px -8px rgba(58,52,43,0.22)",
+          "paper-xl": "0 14px 28px -8px rgba(58,52,43,0.4)",
         },
       },
     },
@@ -58,7 +59,7 @@
     </a>
 
     <nav aria-label="サイトナビゲーション" class="hidden xl:flex items-center gap-1">
-      <a href="mission.html" class="top-nav-link">活動する理由</a>
+      <a href="mission.html" class="top-nav-link">活動理念</a>
       <a href="safety.html" class="top-nav-link">安全への取り組み</a>
       <a href="voice.html" class="top-nav-link">保護者の声</a>
       <a href="members.html" class="top-nav-link">メンバー紹介</a>
@@ -94,7 +95,7 @@
       <nav aria-label="メニュー" class="mt-3 rounded-xl bg-white border border-kami-300 shadow-paper divide-y divide-kami-200 overflow-hidden">
         <a href="mission.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
-          私たちが活動する理由
+          活動理念
         </a>
         <a href="safety.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
@@ -138,63 +139,106 @@
 
 <main id="main-content" class="flex-1">
   <section class="bg-gradient-to-b from-sora-50 to-kami-100">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-10 sm:pb-14 text-center">
-      <p class="section-tag justify-center">私たちが活動する理由</p>
-      <h1 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">なぜ大学生が、本気で子どもたちと遊ぶのか</h1>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-4 sm:pb-6 text-center">
+      <p class="section-tag justify-center">活動理念</p>
+
+      <div class="reveal speech-bubble speech-bubble--down mt-4 block max-w-xs sm:max-w-md mx-auto rounded-2xl bg-white border-2 border-kami-300 shadow-[6px_6px_0_0_#9ccadf] px-5 py-4 sm:px-6 sm:py-5 text-center">
+        <p class="text-xs sm:text-sm font-bold text-sora-600">保護者の皆さまからよくいただく質問です</p>
+        <h1 class="mt-2 font-display font-bold text-lg sm:text-xl text-ink-900 leading-relaxed text-pretty">
+          「なぜ大学生が子どもたちと<br>本気で遊ぶの？」
+        </h1>
+      </div>
+      <img src="assets/illustrations/faq-parent.svg" alt="" aria-hidden="true" class="reveal block mx-auto mt-3 h-44 sm:h-52 w-auto">
     </div>
   </section>
 
   <section>
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 sm:pt-10 pb-14 sm:pb-20">
 
-      <blockquote class="max-w-2xl mx-auto text-center">
-        <img src="assets/illustrations/faq-parent.svg" alt="" aria-hidden="true" class="mx-auto h-28 sm:h-32 w-auto">
+      <p class="reveal max-w-2xl mx-auto text-center text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
+        青空子ども会Ⅱは、単なる「お手伝い」ではなく<br class="sm:hidden">
+        子どもたちの成長に本気で向き合いたいという想いで活動しています。<br class="sm:hidden"><br class="sm:hidden">
+        思いきり体を動かして笑うこと<br class="sm:hidden">
+        友だちとぶつかり合うこと<br class="sm:hidden">
+        そのすべてが子どもたちにとって大切な学びだと、私たちは信じています。
+      </p>
 
-        <div class="speech-bubble mt-3 inline-block max-w-md rounded-2xl bg-white border border-kami-300 shadow-paper px-5 py-4 sm:px-6 sm:py-5 text-left">
-          <p class="text-xs sm:text-sm font-bold text-sora-600">保護者の皆さまからよくいただく質問です</p>
-          <p class="mt-2 font-display font-bold text-lg sm:text-xl text-ink-900 leading-relaxed text-pretty">
-            「なぜ大学生のお兄さん・お姉さんが、<br class="hidden sm:block">子どもたちと本気で遊んでくれるの？」
-          </p>
-        </div>
-
-        <div class="mt-6 pt-5 border-t border-kami-300">
-          <p class="text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
-            青空子ども会Ⅱは、単なる「お手伝い」ではなく、<br class="sm:hidden">
-            子どもたちの成長に本気で向き合いたいという想いで活動しています。<br class="sm:hidden"><br class="sm:hidden">
-            思いきり体を動かして笑うこと、<br class="sm:hidden">
-            友だちとぶつかり合うこと、<br class="sm:hidden">
-            そのすべてが子どもたちにとって大切な学びだと、私たちは信じています。
-          </p>
-        </div>
-      </blockquote>
-
-      <div class="mt-10 sm:mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8 max-w-3xl mx-auto border-t border-kami-300 pt-8 sm:pt-10">
-
-        <div class="text-center sm:text-left">
-          <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">
-            地域の子どもたちに、<br>全力の遊びを届けたい
-          </h2>
-          <p class="mt-3 text-sm text-ink-700 leading-relaxed text-pretty">
-            画面の中では味わえない、汗をかいて転んで笑い合う時間を。
-            私たちは思いきり遊ぶことを通じて、子どもたちの「生きる力」を育みたいと考えています。
-          </p>
-        </div>
-
-        <div class="text-center sm:text-left sm:border-l sm:border-kami-300 sm:pl-10">
-          <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">
-            子どもたちと共に、<br>私たちも成長したい
-          </h2>
-          <p class="mt-3 text-sm text-ink-700 leading-relaxed text-pretty">
-            子どもと本気で向き合う経験は、学生である私たちにとってもかけがえのない学びです。<br class="sm:hidden">
-            共に遊び、共に悩み、共に成長していく、<br class="sm:hidden">
-            そんな関係を大切にしています。
-          </p>
-        </div>
-
+      <div class="reveal mt-10 sm:mt-12 max-w-xl mx-auto text-center border-t border-kami-300 pt-8 sm:pt-10">
+        <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">
+          子どもたちと共に<br>私たちも成長したい
+        </h2>
+        <p class="mt-3 text-sm text-ink-700 leading-relaxed text-pretty">
+          子どもたちと真剣に向き合う毎日は<br class="sm:hidden">
+          私たち自身にとっても<br class="sm:hidden">
+          たくさんの気づきをくれる時間です。<br class="sm:hidden"><br class="sm:hidden">
+          時には笑い合い、時には悩みながら<br class="sm:hidden">
+          一緒に成長していきたいと思っています。
+        </p>
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper transition-colors duration-200">
+      <div class="reveal mt-14 sm:mt-16 max-w-3xl mx-auto rounded-2xl border-2 border-sora-300 bg-white p-6 sm:p-8 shadow-[6px_6px_0_0_#9ccadf]">
+        <div class="text-center">
+          <h2 class="font-display font-bold text-lg sm:text-xl text-ink-900 text-balance">子どもたちに、<br class="sm:hidden">こんな経験をしてほしい</h2>
+          <p class="mt-3 text-sm text-ink-700 leading-relaxed text-pretty">
+            「楽しかった」で終わらせず<br class="sm:hidden">
+            その先にある力にもつながってほしい。<br class="sm:hidden">
+            そんな想いも込めて活動しています。
+          </p>
+        </div>
+
+        <div class="mt-8 divide-y divide-kami-300">
+
+          <div class="flex items-start gap-4 py-5">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sora-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 2.9 6.6 7.1.7-5.5 4.8 1.7 6.9L12 17.3 5.8 21l1.7-6.9L2 9.3l7.1-.7z"/></svg>
+            </span>
+            <div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">「できた！」を積み重ねる経験</h3>
+              <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+                思いきり体を動かして遊ぶ中で<br class="sm:hidden">
+                自分の力で挑戦し、やり遂げる。<br class="sm:hidden">
+                そんな達成感の積み重ねが<br class="sm:hidden">
+                自信につながると考えています。
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 py-5">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sora-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">年齢や個性を超えたつながり</h3>
+              <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+                学年の違う友だちや<br class="sm:hidden">
+                大学生と過ごす時間から<br class="sm:hidden">
+                人との関わり方を<br class="sm:hidden">
+                自然と学んでほしいと思っています。
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 py-5">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sora-100">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg>
+            </span>
+            <div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">ありのままの自分でいられる時間</h3>
+              <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">
+                学校でも家でもない<br class="sm:hidden">
+                第三の居場所だからこそ<br class="sm:hidden">
+                失敗しても大丈夫、と思える環境の中で<br class="sm:hidden">
+                のびのびと自分を<br class="sm:hidden">
+                表現してほしいと考えています。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div data-hide-sticky-bar class="reveal mt-12 text-center">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper-xl transition-colors duration-200">
           体験・見学のお申し込みはこちら
           <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
@@ -211,9 +255,9 @@
       </span>
       <span class="font-display font-bold text-white">青空子ども会Ⅱ</span>
     </a>
-    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学 両大学公認サークル<br class="sm:hidden">（1981年創立）</p>
+    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学<br>大学公認ボランティアサークル</p>
     <nav aria-label="フッターメニュー" class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold text-sora-100">
-      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動する理由</a>
+      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動理念</a>
       <a href="safety.html" class="hover:text-white transition-colors duration-200">安全への取り組み</a>
       <a href="voice.html" class="hover:text-white transition-colors duration-200">保護者の声</a>
       <a href="members.html" class="hover:text-white transition-colors duration-200">メンバー紹介</a>
@@ -233,7 +277,7 @@
 </footer>
 
 <div id="sticky-contact-bar" class="lg:hidden z-40 transition-transform duration-300">
-  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-lg transition-colors duration-200">
+  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-xl transition-colors duration-200">
     お問い合わせ
     <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
   </a>

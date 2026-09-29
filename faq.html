@@ -17,8 +17,8 @@
       extend: {
         colors: {
           sora: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
-          taiyo: { 50:"#fff6ec",100:"#ffe9d2",200:"#ffd1a3",300:"#fcb877",400:"#f4a05c",500:"#ee9245",600:"#cc7530",700:"#a55e27",800:"#7d481f",900:"#543116" },
-          kami: { 50:"#fffdf8",100:"#fbf7ef",200:"#f4eee0",300:"#e9dfc8",400:"#ddcfae",500:"#c9b48c",600:"#ab9268",700:"#86714e",800:"#5f5137",900:"#3d3423" },
+          taiyo: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
+          kami: { 50:"#f2f8fb",100:"#ffffff",200:"#e1eff6",300:"#c3dfed",400:"#9ccadf",500:"#7ab6d3",600:"#5fa9ce",700:"#4589ac",800:"#366d88",900:"#2b5568" },
           ink: { 50:"#f8f6f3",100:"#ede9e2",600:"#756b5a",700:"#564e41",800:"#3a342b",900:"#2b2620" },
           shiba: { 50:"#f1f6ed",100:"#dfebd4",500:"#7fa06b",600:"#668055",700:"#4f6242" },
         },
@@ -31,6 +31,7 @@
         boxShadow: {
           paper: "0 1px 2px rgba(58,52,43,0.08), 0 1px 0 rgba(58,52,43,0.05)",
           "paper-lg": "0 6px 18px -8px rgba(58,52,43,0.22)",
+          "paper-xl": "0 14px 28px -8px rgba(58,52,43,0.4)",
         },
       },
     },
@@ -58,7 +59,7 @@
     </a>
 
     <nav aria-label="サイトナビゲーション" class="hidden xl:flex items-center gap-1">
-      <a href="mission.html" class="top-nav-link">活動する理由</a>
+      <a href="mission.html" class="top-nav-link">活動理念</a>
       <a href="safety.html" class="top-nav-link">安全への取り組み</a>
       <a href="voice.html" class="top-nav-link">保護者の声</a>
       <a href="members.html" class="top-nav-link">メンバー紹介</a>
@@ -94,7 +95,7 @@
       <nav aria-label="メニュー" class="mt-3 rounded-xl bg-white border border-kami-300 shadow-paper divide-y divide-kami-200 overflow-hidden">
         <a href="mission.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
-          私たちが活動する理由
+          活動理念
         </a>
         <a href="safety.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
@@ -142,7 +143,7 @@
       <p class="section-tag justify-center">よくある質問</p>
       <h1 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">気になることをまとめました</h1>
       <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-ink-700 leading-relaxed text-pretty">
-        保護者の皆さまからよくいただくご質問にお答えします。
+        保護者の皆さまから<br>よくいただくご質問にお答えします。
       </p>
     </div>
   </section>
@@ -172,7 +173,7 @@
             </span>
           </button>
           <div class="faq-panel">
-            <div><p class="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-ink-700 leading-relaxed text-pretty">活動中は学生スタッフがお子さんをお預かりしますので、基本的に同伴の必要はありません。初めてのご参加でご不安な場合は、お気軽にお問い合わせください。</p></div>
+            <div><p class="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-ink-700 leading-relaxed text-pretty">活動中は学生スタッフがお子さんをお預かりしますので、基本的に同伴の必要はありません。<br class="sm:hidden"><br class="sm:hidden">活動後はご自宅までお送りしていますが、<br class="sm:hidden">活動場所までのお迎えは行っておりません。<br class="sm:hidden">行きは保護者の方に<br class="sm:hidden">お連れいただいております。<br class="sm:hidden"><br class="sm:hidden">初めてのご参加でご不安な場合は、お気軽にお問い合わせください。</p></div>
           </div>
         </div>
 
@@ -184,7 +185,7 @@
             </span>
           </button>
           <div class="faq-panel">
-            <div><p class="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-ink-700 leading-relaxed text-pretty">活動後に学生がご自宅までお送りするため、文京区立の大塚小・窪町小・青柳小のお子さんを目安としています。それ以外の学区にお住まいの方は、お住まいの場所などを確認のうえ個別に検討しますので、まずはお問い合わせください。</p></div>
+            <div><p class="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-ink-700 leading-relaxed text-pretty">活動後に学生がご自宅までお送りするため、<span class="inline-block rounded-lg border border-sora-300 bg-sora-50 px-2 py-0.5 font-bold text-ink-900">文京区立の大塚小・窪町小・青柳小</span>のお子さんを<span class="font-bold text-ink-900">目安</span>としています。それ以外の学区の方も、まずはお気軽にお問い合わせください。</p></div>
           </div>
         </div>
 
@@ -226,9 +227,9 @@
 
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper transition-colors duration-200">
-          ほかに聞きたいことがあれば、お問い合わせへ
+      <div data-hide-sticky-bar class="mt-12 text-center">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper-xl transition-colors duration-200">
+          お気軽にお問合せください
           <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -244,9 +245,9 @@
       </span>
       <span class="font-display font-bold text-white">青空子ども会Ⅱ</span>
     </a>
-    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学 両大学公認サークル<br class="sm:hidden">（1981年創立）</p>
+    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学<br>大学公認ボランティアサークル</p>
     <nav aria-label="フッターメニュー" class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold text-sora-100">
-      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動する理由</a>
+      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動理念</a>
       <a href="safety.html" class="hover:text-white transition-colors duration-200">安全への取り組み</a>
       <a href="voice.html" class="hover:text-white transition-colors duration-200">保護者の声</a>
       <a href="members.html" class="hover:text-white transition-colors duration-200">メンバー紹介</a>
@@ -266,7 +267,7 @@
 </footer>
 
 <div id="sticky-contact-bar" class="lg:hidden z-40 transition-transform duration-300">
-  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-lg transition-colors duration-200">
+  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-xl transition-colors duration-200">
     お問い合わせ
     <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
   </a>

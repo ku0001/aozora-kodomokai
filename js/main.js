@@ -92,6 +92,32 @@ document.addEventListener("DOMContentLoaded", () => {
     revealTargets.forEach((el) => el.classList.add("is-visible"));
   }
 
+  // 「1日のスケジュール」の弧線：最初と最後のアイコンの中心にぴったり合わせる
+  const sunArcContainer = document.querySelector("[data-arc-container]");
+  const sunArc = document.querySelector("#sun-arc");
+  const arcStart = document.querySelector("[data-arc-start]");
+  const arcEnd = document.querySelector("[data-arc-end]");
+  if (sunArcContainer && sunArc && arcStart && arcEnd) {
+    const positionSunArc = () => {
+      const containerRect = sunArcContainer.getBoundingClientRect();
+      if (containerRect.height === 0) return;
+      const startRect = arcStart.getBoundingClientRect();
+      const endRect = arcEnd.getBoundingClientRect();
+      const startCenter = startRect.top + startRect.height / 2 - containerRect.top;
+      const endCenter = endRect.top + endRect.height / 2 - containerRect.top;
+      sunArc.style.top = `${startCenter}px`;
+      sunArc.style.height = `${endCenter - startCenter}px`;
+    };
+    positionSunArc();
+    if ("ResizeObserver" in window) {
+      const arcResizeObserver = new ResizeObserver(() => positionSunArc());
+      arcResizeObserver.observe(sunArcContainer);
+    } else {
+      window.addEventListener("resize", positionSunArc);
+    }
+    window.addEventListener("load", positionSunArc);
+  }
+
   // 常時表示のお問い合わせバー：お問い合わせセクション/ページが見えている間は隠す
   const stickyContactBar = document.querySelector("#sticky-contact-bar");
   const hideStickyTarget = document.querySelector("[data-hide-sticky-bar]");

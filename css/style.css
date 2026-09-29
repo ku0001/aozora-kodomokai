@@ -18,29 +18,29 @@
   --color-sora-800: #2b5568;
   --color-sora-900: #1e3c49;
 
-  /* --- 太陽オレンジ Taiyo（アクセント。CTA・ロゴの太陽） --- */
-  --color-taiyo-50: #fff6ec;
-  --color-taiyo-100: #ffe9d2;
-  --color-taiyo-200: #ffd1a3;
-  --color-taiyo-300: #fcb877;
-  --color-taiyo-400: #f4a05c;
-  --color-taiyo-500: #ee9245;
-  --color-taiyo-600: #cc7530;
-  --color-taiyo-700: #a55e27;
-  --color-taiyo-800: #7d481f;
-  --color-taiyo-900: #543116;
+  /* --- 太陽オレンジ Taiyo（配色実験のため、そら色と同じ値に統一） --- */
+  --color-taiyo-50: #f2f8fb;
+  --color-taiyo-100: #e1eff6;
+  --color-taiyo-200: #c3dfed;
+  --color-taiyo-300: #9ccadf;
+  --color-taiyo-400: #7ab6d3;
+  --color-taiyo-500: #5fa9ce;
+  --color-taiyo-600: #4589ac;
+  --color-taiyo-700: #366d88;
+  --color-taiyo-800: #2b5568;
+  --color-taiyo-900: #1e3c49;
 
-  /* --- 紙色 Kami（背景の基調。日誌の紙をイメージ） --- */
-  --color-kami-50: #fffdf8;
-  --color-kami-100: #fbf7ef;
-  --color-kami-200: #f4eee0;
-  --color-kami-300: #e9dfc8;
-  --color-kami-400: #ddcfae;
-  --color-kami-500: #c9b48c;
-  --color-kami-600: #ab9268;
-  --color-kami-700: #86714e;
-  --color-kami-800: #5f5137;
-  --color-kami-900: #3d3423;
+  /* --- 紙色 Kami（配色実験のため、白〜そら色の濃淡に統一） --- */
+  --color-kami-50: #f2f8fb;
+  --color-kami-100: #ffffff;
+  --color-kami-200: #e1eff6;
+  --color-kami-300: #c3dfed;
+  --color-kami-400: #9ccadf;
+  --color-kami-500: #7ab6d3;
+  --color-kami-600: #5fa9ce;
+  --color-kami-700: #4589ac;
+  --color-kami-800: #366d88;
+  --color-kami-900: #2b5568;
 
   /* --- インク Ink（本文色。ペンで書いたような焦茶） --- */
   --color-ink-50: #f8f6f3;
@@ -66,6 +66,8 @@
   /* --- シャドウ（紙のフチ程度。多用しない） --- */
   --shadow-paper: 0 1px 2px rgba(58, 52, 43, 0.08), 0 1px 0 rgba(58, 52, 43, 0.05);
   --shadow-paper-lg: 0 6px 18px -8px rgba(58, 52, 43, 0.22);
+  /* --- ボタン用の強めの影（統一） --- */
+  --shadow-paper-xl: 0 14px 28px -8px rgba(58, 52, 43, 0.4);
 }
 
 html {
@@ -123,25 +125,25 @@ header.is-scrolled {
   box-shadow: var(--shadow-paper);
 }
 
-/* ---------- セクションの見出しラベル（日誌の見出しタグ） ---------- */
+/* ---------- セクションの見出しラベル（日誌に貼った付箋タグ） ---------- */
 .section-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
   font-family: var(--font-caption);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   -webkit-text-stroke: 0.6px currentColor;
-  letter-spacing: 0.06em;
-  color: var(--color-taiyo-700);
-  background-color: var(--color-taiyo-50);
-  border: 2px solid var(--color-taiyo-200);
-  border-radius: 999px;
-  padding: 0.45em 1.3em;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background-color: var(--color-taiyo-600);
+  border-radius: 0.5em;
+  padding: 0.5em 1.5em;
+  box-shadow: var(--shadow-paper-lg);
 }
 @media (min-width: 640px) {
   .section-tag {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -153,14 +155,24 @@ header.is-scrolled {
 .speech-bubble::before {
   content: "";
   position: absolute;
-  top: -9px;
+  top: -10px;
   left: 50%;
   width: 16px;
   height: 16px;
   background-color: #fff;
-  border-left: 1px solid var(--color-kami-300);
-  border-top: 1px solid var(--color-kami-300);
+  border-left: 2px solid var(--color-kami-300);
+  border-top: 2px solid var(--color-kami-300);
   transform: translateX(-50%) rotate(45deg);
+}
+
+/* 吹き出しの向き違い：尻尾を下側につける（吹き出しの下にイラストがある場合） */
+.speech-bubble--down::before {
+  top: auto;
+  bottom: -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid var(--color-kami-300);
+  border-bottom: 2px solid var(--color-kami-300);
 }
 
 /* ---------- 天気バッジ（装飾ではなく実用情報：晴天時のみ実施） ---------- */
@@ -302,6 +314,17 @@ header.is-scrolled {
 }
 .faq-item.is-open .faq-icon {
   transform: rotate(45deg);
+}
+/* 逆三角形（シェブロン）タイプのアイコンは、開いたら180度回転して上向きに */
+.faq-item.is-open .faq-icon.faq-icon--chevron {
+  transform: rotate(180deg);
+}
+
+/* トップページの「1日のスケジュール」は、PC幅では常に展開表示（ボタンなし） */
+@media (min-width: 1024px) {
+  #schedule-accordion .faq-panel {
+    grid-template-rows: 1fr;
+  }
 }
 
 /* ---------- スクロールで写真・カードが「貼られる」ような控えめな入り方 ---------- */
@@ -530,6 +553,7 @@ header.is-scrolled {
   font-weight: 700;
   font-size: 0.85rem;
   white-space: nowrap;
+  box-shadow: var(--shadow-paper-xl);
   transition: background-color 150ms ease;
 }
 .top-nav-cta:hover,

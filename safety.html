@@ -17,8 +17,8 @@
       extend: {
         colors: {
           sora: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
-          taiyo: { 50:"#fff6ec",100:"#ffe9d2",200:"#ffd1a3",300:"#fcb877",400:"#f4a05c",500:"#ee9245",600:"#cc7530",700:"#a55e27",800:"#7d481f",900:"#543116" },
-          kami: { 50:"#fffdf8",100:"#fbf7ef",200:"#f4eee0",300:"#e9dfc8",400:"#ddcfae",500:"#c9b48c",600:"#ab9268",700:"#86714e",800:"#5f5137",900:"#3d3423" },
+          taiyo: { 50:"#f2f8fb",100:"#e1eff6",200:"#c3dfed",300:"#9ccadf",400:"#7ab6d3",500:"#5fa9ce",600:"#4589ac",700:"#366d88",800:"#2b5568",900:"#1e3c49" },
+          kami: { 50:"#f2f8fb",100:"#ffffff",200:"#e1eff6",300:"#c3dfed",400:"#9ccadf",500:"#7ab6d3",600:"#5fa9ce",700:"#4589ac",800:"#366d88",900:"#2b5568" },
           ink: { 50:"#f8f6f3",100:"#ede9e2",600:"#756b5a",700:"#564e41",800:"#3a342b",900:"#2b2620" },
           shiba: { 50:"#f1f6ed",100:"#dfebd4",500:"#7fa06b",600:"#668055",700:"#4f6242" },
         },
@@ -31,6 +31,7 @@
         boxShadow: {
           paper: "0 1px 2px rgba(58,52,43,0.08), 0 1px 0 rgba(58,52,43,0.05)",
           "paper-lg": "0 6px 18px -8px rgba(58,52,43,0.22)",
+          "paper-xl": "0 14px 28px -8px rgba(58,52,43,0.4)",
         },
       },
     },
@@ -58,7 +59,7 @@
     </a>
 
     <nav aria-label="サイトナビゲーション" class="hidden xl:flex items-center gap-1">
-      <a href="mission.html" class="top-nav-link">活動する理由</a>
+      <a href="mission.html" class="top-nav-link">活動理念</a>
       <a href="safety.html" class="top-nav-link">安全への取り組み</a>
       <a href="voice.html" class="top-nav-link">保護者の声</a>
       <a href="members.html" class="top-nav-link">メンバー紹介</a>
@@ -94,7 +95,7 @@
       <nav aria-label="メニュー" class="mt-3 rounded-xl bg-white border border-kami-300 shadow-paper divide-y divide-kami-200 overflow-hidden">
         <a href="mission.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
-          私たちが活動する理由
+          活動理念
         </a>
         <a href="safety.html" class="mobile-menu-row">
           <svg class="mobile-menu-triangle" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l8 5-8 5V1z" /></svg>
@@ -141,8 +142,8 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-10 sm:pb-14 text-center">
       <p class="section-tag justify-center">安全への取り組み</p>
       <h1 class="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900 text-balance">大切なお子さんを<br class="sm:hidden">お預かりするために</h1>
-      <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-ink-700 leading-relaxed whitespace-nowrap">
-        私たちは安全面に最大限の配慮をして活動しています。
+      <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-ink-700 leading-relaxed sm:whitespace-nowrap">
+        私たちは安全面に<br class="sm:hidden">最大限の配慮をして活動しています。
       </p>
       <img src="assets/illustrations/safety-children.svg" alt="" aria-hidden="true" class="reveal mt-8 mx-auto w-full max-w-sm sm:max-w-md">
     </div>
@@ -159,7 +160,7 @@
           </span>
           <div>
             <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">学生スタッフの見守り体制</h2>
-            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動中は複数の学生スタッフが子どもたち<br class="sm:hidden">一人ひとりに目を配り、安全に配慮しながら<br class="sm:hidden">見守ります。</p>
+            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動中は複数の学生スタッフが<br class="sm:hidden">子どもたち一人ひとりに目を配り、<br class="sm:hidden">安全に配慮しながら見守ります。</p>
           </div>
         </div>
 
@@ -168,8 +169,8 @@
             <svg viewBox="0 0 24 24" class="h-5 w-5 text-sora-600" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></svg>
           </span>
           <div>
-            <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">活動後は学生2人でご自宅までお送りします</h2>
-            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動終了後は、お子さま1人に対して<br class="sm:hidden">学生2人が付き添い、<br class="sm:hidden">ご自宅まで送り届けています。</p>
+            <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">活動後は学生2人で<br class="sm:hidden">ご自宅までお送りします</h2>
+            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動終了後は、お子さま1人に対して<br class="sm:hidden">学生2人が付き添い<br class="sm:hidden">ご自宅まで送り届けています。</p>
           </div>
         </div>
 
@@ -179,7 +180,7 @@
           </span>
           <div>
             <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">保険への加入</h2>
-            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動中の万が一の事故やケガに備え、<br class="sm:hidden">傷害保険に加入したうえで活動を行っています。</p>
+            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">活動中の万が一の事故やケガに備え<br class="sm:hidden">傷害保険に加入したうえで<br class="sm:hidden">活動を行っています。</p>
           </div>
         </div>
 
@@ -189,7 +190,7 @@
           </span>
           <div>
             <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">児童学・教育学専攻の学生が多数</h2>
-            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">メンバーには児童学科や教育学科など、<br class="sm:hidden">子どもの発達や教育を専門的に学ぶ学生も<br class="sm:hidden">多く在籍しており、専門知識を活かして<br class="sm:hidden">子どもたちと関わっています。</p>
+            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">メンバーには児童学科や教育学科など<br class="sm:hidden">子どもの発達や教育を専門的に学ぶ学生も<br class="sm:hidden">多く在籍しており、専門知識を活かして<br class="sm:hidden">子どもたちと関わっています。</p>
           </div>
         </div>
 
@@ -199,14 +200,14 @@
           </span>
           <div>
             <h2 class="font-display font-bold text-base sm:text-lg text-ink-900 text-balance">健全なサークル運営</h2>
-            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">早稲田大学・日本女子大学 両大学公認の<br class="sm:hidden">サークルとして行動規範を定め、<br class="sm:hidden">大学と教授の指導のもと健全な運営を徹底しています。</p>
+            <p class="mt-2 text-sm text-ink-700 leading-relaxed text-pretty">早稲田大学・日本女子大学 両大学公認の<br class="sm:hidden">サークルとして行動規範を定め<br class="sm:hidden">大学と教授の指導のもと<br class="sm:hidden">健全な運営を徹底しています。</p>
           </div>
         </div>
 
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper transition-colors duration-200">
+      <div data-hide-sticky-bar class="mt-12 text-center">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm px-6 py-3 shadow-paper-xl transition-colors duration-200">
           体験・見学のお申し込みはこちら
           <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
@@ -223,9 +224,9 @@
       </span>
       <span class="font-display font-bold text-white">青空子ども会Ⅱ</span>
     </a>
-    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学 両大学公認サークル<br class="sm:hidden">（1981年創立）</p>
+    <p class="text-xs sm:text-sm text-sora-200">早稲田大学・日本女子大学<br>大学公認ボランティアサークル</p>
     <nav aria-label="フッターメニュー" class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold text-sora-100">
-      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動する理由</a>
+      <a href="mission.html" class="hover:text-white transition-colors duration-200">活動理念</a>
       <a href="safety.html" class="hover:text-white transition-colors duration-200">安全への取り組み</a>
       <a href="voice.html" class="hover:text-white transition-colors duration-200">保護者の声</a>
       <a href="members.html" class="hover:text-white transition-colors duration-200">メンバー紹介</a>
@@ -245,7 +246,7 @@
 </footer>
 
 <div id="sticky-contact-bar" class="lg:hidden z-40 transition-transform duration-300">
-  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-lg transition-colors duration-200">
+  <a href="contact.html" class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-taiyo-500 hover:bg-taiyo-600 active:bg-taiyo-700 text-white font-bold text-sm h-12 px-5 shadow-paper-xl transition-colors duration-200">
     お問い合わせ
     <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
   </a>
