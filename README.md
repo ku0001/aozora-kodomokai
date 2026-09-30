@@ -134,3 +134,31 @@ JavaScript側では送信の成否を厳密には確認できません（通信�
 5. 数分後、`https://<ユーザー名>.github.io/<リポジトリ名>/` で公開される。
    チラシのQRコードにはこのURLを使用する。
 6. 以降の更新は、ローカルで編集して commit・push するだけで自動反映される。
+
+## Google検索への登録（Search Console）
+
+**現状:** セットアップ済みです。
+
+- `sitemap.xml` … 全9ページのURL一覧
+- `robots.txt` … クロール許可とsitemapの場所を記載
+- `index.html` の `<head>` 内に `google-site-verification` のmetaタグを設置済み
+  （サイトの所有権を証明するためのタグ。削除すると所有権確認が外れるので注意）
+
+Search Console (https://search.google.com/search-console) にログインすれば、
+インデックス状況やクロールエラーを確認できます。ページを大きく追加・変更したときは、
+「URL検査」→「インデックス登録をリクエスト」をしておくと反映が早まります。
+
+## 幹事長交代時の引き継ぎチェックリスト
+
+サイト運用に関わる主なアカウント・権限は次の4つです。引き継ぎ時はこれをひと通り確認してください。
+
+1. **GitHubリポジトリ**（サイトの更新権限）
+   - リポジトリの Settings → Collaborators で後任のGitHubアカウントを招待する
+   - 完全に管理を譲る場合は Settings → General → Transfer ownership も検討する
+2. **Google Search Console**（検索への登録状況の管理）
+   - 「設定」→「ユーザーとアクセス権」から後任のGoogleアカウントを「所有者」として追加する
+3. **お問い合わせフォーム（Google Apps Script）**
+   - 上の「問い合わせフォームの仕組み」内、「幹事長交代時の引き継ぎ」の手順の通り、
+     `CONTACT_TO_EMAIL` を新しい送信先メールアドレスに書き換える
+4. **Instagram（`@aozora_children2`）**
+   - ログイン情報（ID・パスワード）を直接引き継ぐ
