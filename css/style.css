@@ -73,9 +73,10 @@
 html {
   scroll-behavior: smooth;
   /* スマホのブラウザが、縦書きなど縦に細長いテキストを
-     「読みやすいように」と自動で拡大してしまう挙動を止める。 */
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+     「読みやすいように」と自動で拡大してしまう挙動を止める。
+     （Safariでは "100%" ではなく "none" でないと止まらない場合があるため none を使用） */
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
@@ -248,6 +249,8 @@ header.is-scrolled {
   transform: translateY(18px);
   filter: blur(8px);
   animation: hero-headline-in 1100ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 .hero-headline-line:nth-child(1) {
   animation-delay: 300ms;
