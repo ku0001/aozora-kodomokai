@@ -72,6 +72,10 @@
 
 html {
   scroll-behavior: smooth;
+  /* スマホのブラウザが、縦書きなど縦に細長いテキストを
+     「読みやすいように」と自動で拡大してしまう挙動を止める。 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
